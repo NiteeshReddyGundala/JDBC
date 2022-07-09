@@ -1,0 +1,15 @@
+package com.Niteesh.app.Factory;
+
+import com.Niteesh.app.Service.StudentService;
+import com.Niteesh.app.Service.StudentServiceImp1;
+
+public class StudentServiceFactory {
+private static StudentService studentservice;
+static {
+	studentservice = new StudentServiceImp1();
+}
+public static StudentService getStudentService() {
+	return studentservice;
+}
+}
+

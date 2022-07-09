@@ -1,0 +1,14 @@
+package com.Niteesh.app.Factory;
+
+import com.Niteesh.app.dao.StudentDao;
+import com.Niteesh.app.dao.StudentDaoImp1;
+
+public class StudentDaoFactory {
+private static StudentDao studentDao;
+static {
+	studentDao = new StudentDaoImp1();
+}
+public static StudentDao getStudentDao() {
+	return  studentDao;
+}
+}

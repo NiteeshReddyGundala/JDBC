@@ -1,0 +1,10 @@
+package com.Niteesh.app.Service;
+
+import com.Niteesh.app.dto.Student;
+
+public interface StudentService {
+public String addStudent(Student student);
+public Student searchStudent(String Sid);
+public String updateStudent(Student student);
+public String deleteStudent(String sid);
+}

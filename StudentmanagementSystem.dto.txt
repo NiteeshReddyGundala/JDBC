@@ -1,0 +1,28 @@
+package com.Niteesh.app.dto;
+
+public class Student {
+
+	private String Sid;
+	private String Sname;
+	private String Saddr;
+	public String getSid() {
+		return Sid;
+	}
+		public void setSid(String Sid) {
+		this.Sid = Sid;	
+		}
+		public String getSname() {
+		    return Sname;
+		}
+        public void setSname(String Sname) {
+        	this.Sname = Sname;
+        }
+        public String getSaddr() {
+        	return Saddr;
+        }
+        public void setSaddr(String Saddr) {
+        	this.Saddr = Saddr;
+        }
+	}
+
+

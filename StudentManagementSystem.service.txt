@@ -1,0 +1,36 @@
+package com.Niteesh.app.Service;
+
+import com.Niteesh.app.Factory.StudentDaoFactory;
+import com.Niteesh.app.dao.StudentDao;
+import com.Niteesh.app.dto.Student;
+
+public class StudentServiceImp1 implements StudentService {
+ @Override
+	public String addStudent(Student student) {
+		StudentDao studentDao = StudentDaoFactory.getStudentDao();
+		String status = studentDao.add(student);
+		return status;
+	}
+
+	@Override
+	public Student searchStudent(String Sid) {
+	 StudentDao studentDao = StudentDaoFactory.getStudentDao();
+	 Student student = studentDao.search(Sid);
+		return student;
+	}
+
+	@Override
+	public String updateStudent(Student newstudent) {
+		StudentDao studentDao = StudentDaoFactory.getStudentDao();
+		String status = studentDao.update(newstudent);
+		return status;
+	}
+
+	@Override
+	public String deleteStudent(String sid) {
+		StudentDao studentDao = StudentDaoFactory.getStudentDao();
+		String status = studentDao.delete(sid);
+		return status;
+	}
+
+}

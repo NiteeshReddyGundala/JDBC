@@ -1,0 +1,8 @@
+package com.Niteesh.app.dao;
+import com.Niteesh.app.dto.Student;
+public interface StudentDao {
+public String add(Student student);
+public Student search(String Sid);
+public String update(Student student);
+public String delete(String Sid);
+}
